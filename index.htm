@@ -1,0 +1,109 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Pagina nueva 1</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_swapImgRestore() {//v1.0
+ var doc=document,i; if(doc.$imgSwaps) { for(i=0;i<doc.$imgSwaps.length;i++) {
+  var elm=doc.$imgSwaps[i]; if(elm) { elm.src=elm.$src; elm.$src=null; } } 
+  doc.$imgSwaps=null; }
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'botones%20interactivos/buttonF.jpg', /*url*/'botones%20interactivos/buttonE.jpg', /*url*/'botones%20interactivos/button21.jpg', /*url*/'botones%20interactivos/button20.jpg', /*url*/'botones%20interactivos/button27.jpg', /*url*/'botones%20interactivos/button26.jpg', /*url*/'botones%20interactivos/button2A.jpg', /*url*/'botones%20interactivos/button29.jpg', /*url*/'botones%20interactivos/button30.jpg', /*url*/'botones%20interactivos/button2F.jpg', /*url*/'botones%20interactivos/button4.jpg', /*url*/'botones%20interactivos/button5.jpg', /*url*/'button2.jpg', /*url*/'button3.jpg', /*url*/'botones%20interactivos/button6.jpg', /*url*/'botones%20interactivos/button2.jpg', /*url*/'botones%20interactivos/button3.jpg', /*url*/'botones%20interactivos/button14.jpg', /*url*/'botones%20interactivos/button15.jpg', /*url*/'botones%20interactivos/button1B.jpg', /*url*/'botones%20interactivos/button1C.jpg', /*url*/'botones%20interactivos/button22.jpg', /*url*/'button8.jpg', /*url*/'button9.jpg', /*url*/'button2.jpg', /*url*/'button3.jpg')">
+
+<table border="1" width="100%">
+	<tr>
+		<td colspan="2">
+		<marquee behavior="alternate" style="font-family: Times New Roman; font-size: 36pt; color: #000000; font-weight: bold">el cafe 
+		</marquee></td>
+	</tr>
+	<tr>
+		<td width="52%">
+		<p align="center"><font size="6">menú</font><font size="4">
+		</font></p>
+		<p align="center">&nbsp;</p>
+		<p align="left"><font size="4">&nbsp;1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="historia_del_cafe.htm">
+		<img border="0" id="img20" src="botones%20interactivos/buttonD.jpg" height="34" width="170" alt="historia de el cafe" onmouseover="FP_swapImg(1,0,/*id*/'img20',/*url*/'botones%20interactivos/buttonE.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img20',/*url*/'botones%20interactivos/buttonD.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img20',/*url*/'botones%20interactivos/buttonF.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img20',/*url*/'botones%20interactivos/buttonE.jpg')" fp-style="fp-btn: Braided Row 5" fp-title="historia de el cafe"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</font></p>
+		<p align="left"><font size="4">&nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="forma_de_cultivo.htm">
+		<img border="0" id="img25" src="botones%20interactivos/button4.jpg" height="34" width="170" alt="forma de cultivo" onmouseover="FP_swapImg(1,0,/*id*/'img25',/*url*/'botones%20interactivos/button5.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img25',/*url*/'botones%20interactivos/button4.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img25',/*url*/'botones%20interactivos/button6.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img25',/*url*/'botones%20interactivos/button5.jpg')" fp-style="fp-btn: Braided Row 1; fp-font: Times New Roman; fp-font-size: 12" fp-title="forma de cultivo"></a></font></p>
+		<p align="left"><font size="4">&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="tipos_de_cafe.htm">
+		<img border="0" id="img23" src="botones%20interactivos/button20.jpg" height="34" width="170" alt="tipos de cafe" onmouseover="FP_swapImg(1,0,/*id*/'img23',/*url*/'botones%20interactivos/button21.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img23',/*url*/'botones%20interactivos/button20.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img23',/*url*/'botones%20interactivos/button22.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img23',/*url*/'botones%20interactivos/button21.jpg')" fp-style="fp-btn: Braided Row 5; fp-font: Times New Roman; fp-font-size: 12" fp-title="tipos de cafe"></a></font></p>
+		<p align="left"><font size="4">&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="plagas_del_cafe.htm">
+		<img border="0" id="img26" src="button7.jpg" height="34" width="170" alt="plagas del cafe" onmouseover="FP_swapImg(1,0,/*id*/'img26',/*url*/'button8.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img26',/*url*/'button7.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img26',/*url*/'button9.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img26',/*url*/'button8.jpg')" fp-style="fp-btn: Braided Row 1; fp-font: Times New Roman; fp-font-size: 12" fp-title="plagas del cafe"></a></font></p>
+		<p align="left"><font size="4">&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="proceso_de_elaboracion.htm">
+		<img border="0" id="img21" src="botones%20interactivos/button13.jpg" height="34" width="170" alt="elaboracion" fp-style="fp-btn: Braided Row 5; fp-font: Times New Roman; fp-font-size: 12" fp-title="elaboracion" onmouseover="FP_swapImg(1,0,/*id*/'img21',/*url*/'botones%20interactivos/button14.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img21',/*url*/'botones%20interactivos/button13.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img21',/*url*/'botones%20interactivos/button15.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img21',/*url*/'botones%20interactivos/button14.jpg')"></a></font></p>
+		<p align="left"><font size="4">&nbsp;6&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="tipos_de_cafe.htm">
+		<img border="0" id="img22" src="botones%20interactivos/button1A.jpg" height="34" width="170" alt="cafe de mi entorno" fp-style="fp-btn: Braided Row 1; fp-font: Times New Roman; fp-font-size: 12" fp-title="cafe de mi entorno" onmouseover="FP_swapImg(1,0,/*id*/'img22',/*url*/'botones%20interactivos/button1B.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img22',/*url*/'botones%20interactivos/button1A.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img22',/*url*/'botones%20interactivos/button1C.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img22',/*url*/'botones%20interactivos/button1B.jpg')"></a></font></p>
+		<p align="left"><font size="4">&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</font><a href="valor_agregado.htm">
+		<img border="0" id="img24" src="botones%20interactivos/button1.jpg" height="34" width="170" alt="valor agregado" onmouseover="FP_swapImg(1,0,/*id*/'img24',/*url*/'botones%20interactivos/button2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img24',/*url*/'botones%20interactivos/button1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img24',/*url*/'botones%20interactivos/button3.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img24',/*url*/'botones%20interactivos/button2.jpg')" fp-style="fp-btn: Braided Row 5; fp-font: Times New Roman; fp-font-size: 12" fp-title="valor agregado"></a></p>
+		<p align="left"><font size="4">&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</font><a href="comercializacion_del_cafe.htm">
+		<img border="0" id="img27" src="button1.jpg" height="34" width="170" alt="comercializacion " onmouseover="FP_swapImg(1,0,/*id*/'img27',/*url*/'button2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img27',/*url*/'button1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img27',/*url*/'button3.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img27',/*url*/'button2.jpg')" fp-style="fp-btn: Braided Row 1; fp-font: Times New Roman; fp-font-size: 12" fp-title="comercializacion "></a></p>
+		<p align="left"><font size="4">&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="ppp_las_camelias.htm">
+		<img border="0" id="img13" src="botones%20interactivos/button25.jpg" height="34" width="170" alt="ppp las camelias" onmouseover="FP_swapImg(1,0,/*id*/'img13',/*url*/'botones%20interactivos/button26.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img13',/*url*/'botones%20interactivos/button25.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img13',/*url*/'botones%20interactivos/button27.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img13',/*url*/'botones%20interactivos/button26.jpg')" fp-style="fp-btn: Braided Row 5; fp-font: Times New Roman; fp-font-size: 12; fp-orig: 0" fp-title="ppp las camelias"></a></font></p>
+		<p align="left"><font size="4">&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="mi_colegio.htm">
+		<img border="0" id="img14" src="botones%20interactivos/button28.jpg" height="34" width="170" alt="mi colegio" fp-style="fp-btn: Braided Row 1; fp-font: Times New Roman; fp-font-size: 12; fp-orig: 0" fp-title="mi colegio" onmouseover="FP_swapImg(1,0,/*id*/'img14',/*url*/'botones%20interactivos/button29.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img14',/*url*/'botones%20interactivos/button28.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img14',/*url*/'botones%20interactivos/button2A.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img14',/*url*/'botones%20interactivos/button29.jpg')"></a></font></p>
+		<p align="left"><font size="4">&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="acerca_de.htm">
+		<img border="0" id="img15" src="botones%20interactivos/button2E.jpg" height="34" width="170" alt="acerca de " onmouseover="FP_swapImg(1,0,/*id*/'img15',/*url*/'botones%20interactivos/button2F.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img15',/*url*/'botones%20interactivos/button2E.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img15',/*url*/'botones%20interactivos/button30.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img15',/*url*/'botones%20interactivos/button2F.jpg')" fp-style="fp-btn: Braided Row 5; fp-font: Times New Roman; fp-font-size: 12; fp-orig: 0" fp-title="acerca de "></a></font><p align="left">
+		<font size="4">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</font></p></td>
+		<td width="47%">
+		<img border="5" src="imagenes/IMG_20220817_152509.jpg" width="373" height="499" id="img1" onmouseover=" FP_swapImg(1,1,/*id*/'img1',/*url*/'imagenes/IMG_20220817_152456.jpg');" align="right" hspace="80" vspace="80" onmouseout="FP_swapImgRestore()"></td>
+	</tr>
+</table>
+
+<table border="1" width="100%">
+	<tr>
+		<td width="429" style="border: 4px dashed #000000" bgcolor="#FFFFFF"> <a href="https://www.ica.gov.co/">
+			<img border="0" src="imagenes/ica.png" width="224" height="201" hspace="50" vspace="20" style="border: 10px double #000080" align="left"></a></td>
+		<td style="border: 4px dashed #000000" bgcolor="#FFFFFF">
+			<a href="https://www.minagricultura.gov.co/">
+			<img border="0" src="imagenes/minagricultuta.png" width="216" height="201" hspace="50" align="left" vspace="20" style="border: 10px double #000080"></a></td>
+		<td width="432" style="border: 4px dashed #000000" bgcolor="#FFFFFF">
+		<a href="https://federaciondecafeteros.org/wp">
+			<img border="0" src="imagenes/federacion%20de%20cafeteros.jpg" width="224" height="190" align="left" hspace="50" vspace="20" style="border: 10px double #000080; padding: 0"></a></td>
+	</tr>
+</table>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+</body>
+
+</html>
